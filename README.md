@@ -36,7 +36,7 @@ follow the sequence:
 
 HappyPets is company, offering a shop for animal products. It uses PacketDelivery's Services for delivering the goods to its customers,
 and there digital services to provide access to delivery-details. 
-The HappyPets System uses [Keycloak](https://www.keycloak.org/) for Identiy Managment and issuing of credentials for its users. To participate
+The HappyPets System uses [Keycloak](https://www.keycloak.org/) for Identity Management and issuing of credentials for its users. To participate
 in the dataspace, HappyPets is registered with its decentralized identifier ```did:key:z6MkigCEnopwujz8Ten2dzq91nvMjqbKQYcifuZhqBsEkH7g``` at
 the trusted-issuers-registry.
 
