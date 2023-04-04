@@ -10,8 +10,13 @@ import lombok.Getter;
 public class UserEnvironment {
 
 	/**
-	 * The wallet of the user. It will contain all
+	 * The wallet of the user. It will contains the logic for the authentication flows, as well as the once for
+	 * receiving credentials.
 	 */
 	private final Wallet wallet = new Wallet();
+	/**
+	 * The demo application that the user uses. Contains sessions and urls required for simulating an application and the
+	 * methods to fulfill the typical duties of an application.
+	 */
 	private final Application application = new Application();
 }

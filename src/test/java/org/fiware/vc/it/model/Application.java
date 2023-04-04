@@ -108,13 +108,13 @@ public class Application {
 	public void accessBackend() throws Exception {
 
 		HttpRequest orionRequest = HttpRequest.newBuilder()
-				.uri(URI.create(String.format("%s/ngsi-ld/v1/entities/urn:ngsi-ld:DELIVERYORDER:1",
+				.uri(URI.create(String.format("%s/ngsi-ld/v1/entities?type=DELIVERYORDER",
 						applicationConfig.securedBackend())))
 				.GET()
 				.header("Authorization", "Bearer " + jwt)
 				.build();
 		HttpResponse<String> orionResponse = HTTP_CLIENT.send(orionRequest, HttpResponse.BodyHandlers.ofString());
-		assertEquals(404, orionResponse.statusCode(), "The request should have been allowed.");
+		assertEquals(HttpStatus.SC_OK, orionResponse.statusCode(), "The request should have been allowed.");
 	}
 
 	public Optional<String> getLoginSession() {
