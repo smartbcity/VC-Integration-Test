@@ -44,8 +44,8 @@ public class HappypetsToPacketDeliveryStandardScenario extends StepDefinitions {
 						PacketDeliveryEnvironment.PACKET_DELIVERY_ORION_ADDRESS));
 	}
 
-	@When("The admin user requests a credentials offer from HappyPets.")
-	public void happyPetsAdminGetCredentialsOffer() throws Exception {
+	@When("The gold user requests a credentials offer from HappyPets.")
+	public void happyPetsGoldGetCredentialsOffer() throws Exception {
 		// a user account token is required to retrieve an offer
 		// in a real world scenario, this could f.e. be a login to keycloak, where to QR is scanned
 		// or any kind of m2m-interaction with Keycloak to get an service-account token
