@@ -355,7 +355,7 @@
                             </build>
                         </image>
                         <image>
-                            <name>orion-ld</name>
+                            <name>orion-local</name>
                             <build>
                                 <from>${orion-ld.image}</from>
                             </build>
@@ -425,7 +425,7 @@
                                         <dockerImage>kong</dockerImage>
                                         <dockerImage>dsba-pdp</dockerImage>
                                         <dockerImage>keyrock</dockerImage>
-                                        <dockerImage>orion-ld</dockerImage>
+                                        <dockerImage>orion-local</dockerImage>
                                     </dockerImages>
                                     <streamLogs>true</streamLogs>
                                     <manifests>${project.basedir}/k3s/</manifests>

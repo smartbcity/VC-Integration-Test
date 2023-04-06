@@ -108,7 +108,7 @@ spec:
       containers:
         - name: orion-ld
           imagePullPolicy: Never
-          image: orion-ld
+          image: orion-local
           ports:
             - name: http
               containerPort: 1026
