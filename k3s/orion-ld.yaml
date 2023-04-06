@@ -107,8 +107,8 @@ spec:
       serviceAccountName: default
       containers:
         - name: orion-ld
-          imagePullPolicy: Never
-          image: orion-local
+          imagePullPolicy: IfNotPresent
+          image: quay.io/fiware/orion-ld:1.1.2
           ports:
             - name: http
               containerPort: 1026
