@@ -19,11 +19,11 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 
 
 @JsonTypeName("CredentialsOffer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2023-07-11T17:05:26.123229945+02:00[Europe/Paris]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2023-07-11T17:09:13.601300760+02:00[Europe/Paris]")
 public class CredentialsOfferVO   {
   private @Valid String credentialIssuer;
   private @Valid List<Object> credentials = null;
-  private @Valid PreAuthorizedGrantVO grants;
+  private @Valid org.fiware.keycloak.oidcvc.model.PreAuthorizedVO grants;
 
   /**
    **/
@@ -83,7 +83,7 @@ public class CredentialsOfferVO   {
   }
   /**
    **/
-  public CredentialsOfferVO grants(PreAuthorizedGrantVO grants) {
+  public CredentialsOfferVO grants(org.fiware.keycloak.oidcvc.model.PreAuthorizedVO grants) {
     this.grants = grants;
     return this;
   }
@@ -91,12 +91,12 @@ public class CredentialsOfferVO   {
   
   @ApiModelProperty(value = "")
   @JsonProperty("grants")
-  public PreAuthorizedGrantVO getGrants() {
+  public org.fiware.keycloak.oidcvc.model.PreAuthorizedVO getGrants() {
     return grants;
   }
 
   @JsonProperty("grants")
-  public void setGrants(PreAuthorizedGrantVO grants) {
+  public void setGrants(org.fiware.keycloak.oidcvc.model.PreAuthorizedVO grants) {
     this.grants = grants;
   }
 
