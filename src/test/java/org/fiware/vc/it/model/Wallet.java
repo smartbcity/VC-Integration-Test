@@ -78,7 +78,7 @@ public class Wallet {
 	public void getTokenFromIssuer() throws Exception {
 		Map<String, String> tokenRequestFormData = Map.of("grant_type",
 				"urn:ietf:params:oauth:grant-type:pre-authorized_code", "code",
-				credentialsOffer.getGrants().getUrnColonIetfColonParamsColonOauthColonGrantTypeColonPreAuthorizedCode().getPreAuthorizedCode());
+				credentialsOffer.getGrants().getPreAuthorizedCode());
 
 		HttpRequest tokenRequest = HttpRequest.newBuilder()
 				.uri(URI.create(issuerInfo.getTokenEndpoint()))
