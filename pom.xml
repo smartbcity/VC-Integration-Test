@@ -191,7 +191,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>https://raw.githubusercontent.com/wistefan/keycloak-vc-issuer/main/api/api.yaml
+                            <inputSpec>https://raw.githubusercontent.com/FIWARE/keycloak-vc-issuer/0.3.3/api/api.yaml
                             </inputSpec>
                             <strictSpec>true</strictSpec>
                             <modelPackage>org.fiware.keycloak.oidcvc.model</modelPackage>
@@ -415,7 +415,6 @@
                                     <goal>rm</goal>
                                 </goals>
                                 <configuration>
-                                    <failIfExists>false</failIfExists>
                                     <dockerImages>
                                         <dockerImage>keycloak</dockerImage>
                                         <dockerImage>keycloak-vc-issuer</dockerImage>
