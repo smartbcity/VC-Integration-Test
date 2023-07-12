@@ -8,7 +8,6 @@ data:
     server:
       port: 7070
     verifier: 
-        tirAddress: http://satellite:6060/trusted_issuer/v3/issuers/
         did: did:key:z6MksU6tMfbaDzvaRe5oFE4eZTVTV4HJM4fmQWWGsDGQVsEr
     ssiKit:
         auditorURL: http://waltid:7003
