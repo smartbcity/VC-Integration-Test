@@ -10,13 +10,6 @@ data:
     verifier: 
         tirAddress: http://satellite:6060/trusted_issuer/v3/issuers/
         did: did:key:z6MksU6tMfbaDzvaRe5oFE4eZTVTV4HJM4fmQWWGsDGQVsEr
-        policies:
-          default:
-              SignaturePolicy: {}
-              IssuedDateBeforePolicy: {}
-              ValidFromBeforePolicy: {}
-              ExpirationDateAfterPolicy: {}
-              EbsiTrustedIssuerRegistryPolicy: {}
     ssiKit:
         auditorURL: http://waltid:7003
     logging:
