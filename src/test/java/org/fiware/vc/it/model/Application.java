@@ -60,6 +60,10 @@ public class Application {
 
 		String locationHeader = sameDeviceResponse.headers().firstValue("location").get();
 		List<NameValuePair> params = URLEncodedUtils.parse(URI.create(locationHeader), Charset.forName("UTF-8"));
+
+		System.out.println("**************  3 SAME DEVICE RESPONSE ****************");
+		System.out.println(sameDeviceResponse.toString());
+
 		SameDeviceParams sameDeviceParams = new SameDeviceParams();
 		params.forEach(p -> {
 			switch (p.getName()) {
