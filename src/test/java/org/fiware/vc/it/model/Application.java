@@ -62,7 +62,7 @@ public class Application {
 		List<NameValuePair> params = URLEncodedUtils.parse(URI.create(locationHeader), Charset.forName("UTF-8"));
 
 		System.out.println("**************  3 SAME DEVICE RESPONSE ****************");
-		System.out.println(sameDeviceResponse.toString());
+		System.out.println(params);
 
 		SameDeviceParams sameDeviceParams = new SameDeviceParams();
 		params.forEach(p -> {
