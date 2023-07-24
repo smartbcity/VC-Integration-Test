@@ -70,7 +70,7 @@
         <kong.image>quay.io/fiware/kong:0.5.2</kong.image>
         <keyrock.image>quay.io/fiware/idm:8.3.0</keyrock.image>
         <dsba-pdp.image>quay.io/fiware/dsba-pdp:1.0.0-PRE-29</dsba-pdp.image>
-        <busybox.image>docker.io/busybox:latest</busybox.image>
+        <tcpdump.image>docker.io/kaazing/tcpdump:latest</tcpdump.image>
     </properties>
 
     <dependencyManagement>
@@ -361,9 +361,9 @@
                             </build>
                         </image>
                         <image>
-                            <name>busybox</name>
+                            <name>tcpdump</name>
                             <build>
-                                <from>${busybox.image}</from>
+                                <from>${tcpdump.image}</from>
                             </build>
                         </image>
                     </images>
@@ -432,7 +432,7 @@
                                         <dockerImage>kong</dockerImage>
                                         <dockerImage>dsba-pdp</dockerImage>
                                         <dockerImage>keyrock</dockerImage>
-                                        <dockerImage>busybox</dockerImage>
+                                        <dockerImage>tcpdump</dockerImage>
                                     </dockerImages>
                                     <streamLogs>true</streamLogs>
                                     <manifests>${project.basedir}/k3s/</manifests>
@@ -498,7 +498,7 @@
                                         <dockerImage>kong</dockerImage>
                                         <dockerImage>dsba-pdp</dockerImage>
                                         <dockerImage>keyrock</dockerImage>
-                                        <dockerImage>busybox</dockerImage>
+                                        <dockerImage>tcpdump</dockerImage>
                                     </dockerImages>
                                     <streamLogs>true</streamLogs>
                                     <manifests>${project.basedir}/k3s/</manifests>

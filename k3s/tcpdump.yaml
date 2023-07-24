@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcpdump
+  namespace: default
+  labels:
+    app: tcpdump
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tcpdump
+  template:
+    metadata:
+      labels:
+        app: tcpdump
+    spec:
+      containers:
+      - name: tcpdump-container
+        image: kaazing/tcpdump
