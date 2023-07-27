@@ -124,6 +124,10 @@ public class Wallet {
 
 		VerifiablePresentation vp = new VerifiablePresentation();
 		vp.setHolder(HappyPetsEnvironment.HAPPYPETS_GOLD_USER_DID);
+
+		System.out.println("************* CREDENTIAL ***************");
+		System.out.println(credential.toString());
+
 		vp.getVerifiableCredential().add(credential);
 
 		PresentationSubmission presentationSubmission = new PresentationSubmission();
