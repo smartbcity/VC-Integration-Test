@@ -43,7 +43,7 @@ spec:
             - containerPort: 8080
               name: http
           command: ["/opt/keycloak/bin/kc.sh"]
-          args: ["start-dev", "--health-enabled=true", "--log-level INFO"]
+          args: ["start-dev", "--health-enabled=true", "--log-level INFO", "--features=preview"]
           env:
             - name: KEYCLOAK_ADMIN
               value: admin
