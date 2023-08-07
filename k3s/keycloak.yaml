@@ -118,7 +118,7 @@ data:
       "displayNameHtml": "Happypets Keycloak",
       "enabled": true,
       "attributes": {
-        "frontendUrl": "http://localhost:8080"
+        "frontendUrl": "http://did.fiware.smart-b.io:8080"
       },
       "sslRequired": "none",
       "roles": {
